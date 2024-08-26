@@ -1,128 +1,68 @@
-body{
-    font-family: cursive;
-    font-weight: 300;
-    max-width: 900px;
-    margin: 0 auto;
+* {
+    box-sizing: border-box;
 }
 
-nav{
-    width: 100%;
-    height: 160px;
-    background-color: rgb(235, 180, 78), 0.883;
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
 }
 
-nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    transition:  0.8s all;
-    padding: 18px 20px;
-}
-nav ul li:hover{
-    background-color: rgb(235, 180, 78);
-}
-nav ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-a:visited{
-    color: #140b0b;
-}
-
-a:active{
-    color: #e26f0e;
-}
-
-.img-logo{
-    width: 10%;
-    padding-top: 70px;
-    padding-left: 5%;
-}
- nav ul{
-    padding-top: 90px;
-    float: right;
- }
-
- .banner{
-    max-width: 100%;
- }
-
- .featured{
-    background-color: rgb(240, 193, 107, 0.616);
- }
-
- .fp-video{
-    width: 55%;
-    padding: 2em;
-    overflow-y: visible;
- }
-
- .ft-articulo{
-    width: 30%;
-    padding: 2em;
-    vertical-align: top;
- }
-
- article{
+.header {
     padding: 30px;
-    background-color: rgb(240, 220, 107, 0.582);
-    margin: 20px 0;
- }
-
- article h1{
-    border-bottom: solid thin black;
- }
-
- .fp-video,
- .ft-articulo{
-    display: inline-block;
- }
-
- .boton-container{
+    font-size: 40px;
     text-align: center;
-    background-color: #ea6e39;
-    margin: 0 auto;
- }
-
- .boton-container a{
-    text-decoration: none;
-    color: #fff;
+    background: white;
 }
 
-.boton{
-    padding: 15px;
+.leftcolumn {
+    float: left;
+    width: 75%;
 }
 
-.boton-container:hover{
-    background-color: rgb(158, 118, 43);
+.rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
 }
 
-.art-image img{
-     max-width: 100%;
-     margin: 0;
-}
-.art-cont{
-    width: 740px;
-    vertical-align: top;
-}
-.art-cont2{
-    width: 240px;
-    vertical-align: top;
-    margin: 50px;
+.fakeimg {
+    width: 100%;
+    padding: 20px;
 }
 
-.flex{
-    display: flex;
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
 }
-h2{
-    margin: 0;
-    border-bottom: solid thin black;
-}
-footer{
-    background-color: rgb(235, 180, 78);
-    color: blue;
+
+.row:after {
+    content: "";
+    display: table;
     clear: both;
-    line-height: 30px;
+}
+
+.footer {
+    padding: 20px;
     text-align: center;
-    padding: 45px;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.img_h{
+    width: 90%;
+    padding: 10px;
+}
+
+span{
+    color: red;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
 }
